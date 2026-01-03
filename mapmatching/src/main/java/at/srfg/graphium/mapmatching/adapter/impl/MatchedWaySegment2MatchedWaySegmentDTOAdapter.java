@@ -47,6 +47,7 @@ public class MatchedWaySegment2MatchedWaySegmentDTOAdapter implements IAdapter<M
 		if (segmentToAdapt.getGeometry() != null) {
 			segment.setGeometry(segmentToAdapt.getGeometry().toText());
 		}
+        segment.setWayId(segmentToAdapt.getWayId());
 		
 		return segment;
 	}

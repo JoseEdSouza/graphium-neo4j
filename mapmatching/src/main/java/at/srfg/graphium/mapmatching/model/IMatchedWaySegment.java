@@ -91,4 +91,7 @@ public interface IMatchedWaySegment extends IWaySegment {
 	void setCertain(boolean certain);
 
 	boolean isValid();
+
+    long getWayId();
+    void setWayId(long wayId);
 }
