@@ -108,7 +108,7 @@ public class Neo4jWaySegmentHelperImpl implements INeo4jWaySegmentHelper<IWaySeg
 		if (segment.isUrban()) {
 			node.setProperty(WayGraphConstants.SEGMENT_URBAN, segment.isUrban());
 		}
-		if (segment.getId() != segment.getWayId()) {
+		if (segment.getWayId() != 0) {
 			node.setProperty(WayGraphConstants.SEGMENT_WAY_ID, segment.getWayId());
 		}
 		if (segment.getGeometry() != null) {
