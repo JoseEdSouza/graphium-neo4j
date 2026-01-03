@@ -105,3 +105,11 @@ buildNumber.properties
 
 neo4j-data
 neo4j-logs
+
+# IDEs and text editors
+.vscode
+.idea
+
+# networks
+networks/
+*.osm.pbf
